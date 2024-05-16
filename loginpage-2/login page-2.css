@@ -23,14 +23,15 @@ body{
     box-shadow: 0 4px 20px 0 rgb(234, 227, 126)
 }
 
-/*.container::before{
+.container::before{
     content: "";
     position: absolute;
     top: 0;
     height: 100%;
     width: 100%;
     background: linear-gradient(-45deg,#f3cf6c,#875d03);
-}*/
+    z-index: 6;
+}
 
 .Singin-Signup{
     position: absolute;
@@ -41,6 +42,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    /*z-index: 5;*/
 }
 
 form{
@@ -119,4 +121,30 @@ form{
 .btn:hover{
     color: rgb(40, 38, 38);
     background-color: rgb(10, 234, 234);
+}
+
+.panels-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 10%;
+    min-width: 300px;
+    padding: 0 10px;
+    z-index: 6;
+}
+
+.image{
+    width: 100%;
 }
