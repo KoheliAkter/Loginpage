@@ -23,7 +23,7 @@ body{
     box-shadow: 0 4px 20px 0 rgb(234, 227, 126)
 }
 
-.container::before{
+/*.container::before{
     content: "";
     position: absolute;
     top: 0;
@@ -31,7 +31,7 @@ body{
     width: 100%;
     background: linear-gradient(-45deg,#f3cf6c,#875d03);
     z-index: 6;
-}
+}*/
 
 .Singin-Signup{
     position: absolute;
@@ -147,4 +147,49 @@ form{
 
 .image{
     width: 100%;
+}
+
+/*.panels-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 18%;
+    min-width: 238px;
+    padding: 0 10px;
+    text-align: center;
+    z-index: 6;
+    
+}
+
+.content{
+    color: rgb(4, 4, 4);
+}
+
+.panel h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.panel p{
+    font-size: 15px;
+    padding: 10px 0;
+}
+.image{
+    width: 100%;
+}
+
+.container .sign-up-mode::before{
+    transform: translateX(0);
 }
